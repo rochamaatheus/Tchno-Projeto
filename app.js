@@ -12,15 +12,16 @@ const vm = new Vue({
     },
   },
   methods: {
-    fetchProdutos() {
+    fetchListaProdutos() {
       fetch('./api/produtos.json')
         .then((r) => r.json())
         .then((json) => {
           this.produtos = json;
         });
     },
+    fetchProduto() {},
   },
   created() {
-    this.fetchProdutos();
+    this.fetchListaProdutos();
   },
 });
