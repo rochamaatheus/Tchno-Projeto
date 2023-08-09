@@ -15,6 +15,25 @@
   </head>
   <body>
     <div id="app">
+      <section class="produtos">
+        <div
+          v-for="produto in produtos"
+          @click="fetchProduto(produto.id)"
+          :key="produto.id"
+          class="produto"
+        >
+          <img
+            v-bind:src="produto.img"
+            :alt="produto.nome"
+            class="produto_img"
+          />
+          <div class="produto_info">
+            <span class="produto_preco">{{produto.preco | numeroPreco}}</span>
+            <h2 class="produto_titulo">{{produto.nome}}</h2>
+          </div>
+        </div>
+      </section>
+
       <section class="modal" v-if="produto" @click="fecharModal">
         <div class="modal_container">
           <div class="modal_img">
@@ -37,25 +56,6 @@
                 </p>
               </li>
             </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="produtos">
-        <div
-          v-for="produto in produtos"
-          @click="fetchProduto(produto.id)"
-          :key="produto.id"
-          class="produto"
-        >
-          <img
-            v-bind:src="produto.img"
-            :alt="produto.nome"
-            class="produto_img"
-          />
-          <div class="produto_info">
-            <span class="produto_preco">{{produto.preco | numeroPreco}}</span>
-            <h2 class="produto_titulo">{{produto.nome}}</h2>
           </div>
         </div>
       </section>
