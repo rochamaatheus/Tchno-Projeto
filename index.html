@@ -15,12 +15,13 @@
   </head>
   <body>
     <div id="app">
-      <section class="modal">
+      <section class="modal" v-if="produto" @click="fecharModal">
         <div class="modal_container">
           <div class="modal_img">
             <img :src="produto.img" :alt="produto.nome" />
           </div>
           <div class="modal_dados">
+            <button @click="produto = false" class="modal_fechar">X</button>
             <span class="modal_preco">{{produto.preco}}</span>
             <h2 class="modal_titulo">{{produto.nome}}</h2>
             <p>{{produto.descricao}}</p>
