@@ -2,7 +2,7 @@ const vm = new Vue({
   el: '#app',
   data: {
     produtos: [],
-    produto: [],
+    produto: false,
   },
   filters: {
     numeroPreco(valor) {
@@ -22,6 +22,9 @@ const vm = new Vue({
       fetch(`./api/produtos/${id}/dados.json`)
         .then((r) => r.json())
         .then((json) => (this.produto = json));
+    },
+    fecharModal(event) {
+      if (event.target === event.currentTarget) this.produto = false;
     },
   },
   created() {
