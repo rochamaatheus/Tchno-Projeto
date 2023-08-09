@@ -26,6 +26,34 @@ body {
   padding: 0 5rem;
 }
 
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 56.25rem;
+  padding: 1.25rem 0;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.carrinho_menu::after {
+  content: '';
+  display: inline-block;
+  background: url('./assets/carrinho.svg') no-repeat center center;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.875rem;
+}
+
+.carrinho_menu {
+  display: flex;
+  align-items: center;
+}
+
 /* LISTA PRODUTO */
 
 .produtos {
