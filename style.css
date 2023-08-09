@@ -22,6 +22,10 @@ body {
   font-family: 'Noto Serif', serif;
 }
 
+#app {
+  padding: 0 5rem;
+}
+
 /* LISTA PRODUTO */
 
 .produtos {
