@@ -18,7 +18,7 @@ ul {
 
 body {
   background: linear-gradient(to right, #1a1a1a 30%, #fff 30%);
-  font-family: 'Noto Serif';
+  font-family: 'Noto Serif', serif;
 }
 
 /* LISTA PRODUTO */
@@ -49,4 +49,71 @@ body {
 
 .produto_preco {
   color: rgba(0, 0, 0, 0.5);
+}
+
+/* MODAL */
+
+.modal::before {
+  content: '';
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 5rem;
+}
+
+.modal_container {
+  position: relative;
+  background: linear-gradient(to right, transparent 15.625rem, #fff 15.625rem);
+  z-index: 1;
+  display: grid;
+  align-items: end;
+  gap: 3.125rem;
+  padding: 0 3.125rem 3.125rem 0;
+}
+
+.modal_img {
+  margin-top: 3.125rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal_img img {
+  max-width: 18.75rem;
+  display: block;
+}
+
+.modal_dados {
+  grid-column: 2;
+  max-width: 35rem;
+}
+
+.modal_titulo {
+  font-size: 3rem;
+}
+
+.modal_btn {
+  margin-top: 5rem;
+  background-color: #000;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  padding: 0.875rem 1.5rem;
+  font-family: 'Noto Serif', serif;
+  transition: 0.2s;
+}
+
+.modal_btn:active {
+  background-color: #808080;
 }
