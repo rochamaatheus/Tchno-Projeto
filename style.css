@@ -3,7 +3,8 @@ h1,
 h2,
 body,
 ul,
-li {
+li,
+p {
   padding: 0px;
   margin: 0px;
 }
@@ -116,4 +117,27 @@ body {
 
 .modal_btn:active {
   background-color: #808080;
+}
+
+/* AVALIAÇÕES */
+
+.avaliacoes {
+  grid-column: 2;
+}
+
+.avaliacao {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.avaliacoes_subtitulo {
+  font-size: 1.75rem;
+}
+
+.avaliacao_descricao {
+  color: rgba(0, 0, 0, 0.7);
+  margin: 1.25rem 0 5px 0;
+}
+
+.avaliacao_usuario {
+  font-weight: bold;
 }
