@@ -52,6 +52,7 @@ body {
 .carrinho_menu {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 /* LISTA PRODUTO */
@@ -160,6 +161,10 @@ body {
 }
 
 .modal_btn:active {
+  background-color: #808080;
+}
+
+.modal_btn.esgotado {
   background-color: #808080;
 }
 
