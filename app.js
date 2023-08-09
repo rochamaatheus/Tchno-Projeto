@@ -26,6 +26,9 @@ const vm = new Vue({
     fecharModal(event) {
       if (event.target === event.currentTarget) this.produto = false;
     },
+    abrirModal(id) {
+      this.fetchProduto(id);
+    },
   },
   created() {
     this.fetchListaProdutos();
