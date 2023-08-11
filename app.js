@@ -5,6 +5,11 @@ const vm = new Vue({
     produto: false,
     carrinho: [],
   },
+  watch: {
+    carrinho() {
+      window.localStorage.carrinho = JSON.stringify(this.carrinho);
+    },
+  },
   computed: {
     carrinhoTotal() {
       let total = 0;
@@ -47,8 +52,13 @@ const vm = new Vue({
     removerItem(index) {
       this.carrinho.splice(index, 1);
     },
+    checarCarrinho() {
+      if (window.localStorage.carrinho)
+        this.carrinho = JSON.parse(window.localStorage.carrinho);
+    },
   },
   created() {
     this.fetchListaProdutos();
+    this.checarCarrinho();
   },
 });
