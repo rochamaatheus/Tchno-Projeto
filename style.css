@@ -203,3 +203,39 @@ body {
 .avaliacao_usuario {
   font-weight: bold;
 }
+
+/* ALERTA */
+
+.alerta {
+  position: absolute;
+  top: 1.25rem;
+  left: 0px;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.alerta.ativo {
+  display: block;
+  animation: fadeInDown 0.3s forwards;
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, -1.875rem, 0);
+    opacity: 0;
+  }
+  to {
+    transform: initial;
+    opacity: 1;
+  }
+}
+
+.alerta_mensagem {
+  background-color: #fff;
+  display: inline-block;
+  padding: 1.25rem 2.5rem;
+  border: 2px solid;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.2);
+}
