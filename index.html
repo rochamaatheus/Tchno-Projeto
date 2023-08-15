@@ -20,12 +20,6 @@
         <div class="carrinho_menu">
           {{carrinhoTotal | numeroPreco}} | {{carrinho.length}}
         </div>
-        <ul>
-          <li v-for="(item, index) in carrinho">
-            <p>{{item.nome}} : {{index}}</p>
-            <button @click="removerItem(index)">X</button>
-          </li>
-        </ul>
       </header>
 
       <section class="produtos">
