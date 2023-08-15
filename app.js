@@ -54,6 +54,10 @@ const vm = new Vue({
     },
     abrirModal(id) {
       this.fetchProduto(id);
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
     },
     adicionarItem() {
       this.produto.estoque--;
