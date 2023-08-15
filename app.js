@@ -6,6 +6,7 @@ const vm = new Vue({
     carrinho: [],
     mensagemAlerta: 'Item Adicionado!',
     alertaAtivo: false,
+    carrinhoAtivo: false,
   },
   watch: {
     carrinho() {
@@ -45,11 +46,18 @@ const vm = new Vue({
         .then((r) => r.json())
         .then((json) => (this.produto = json));
     },
+    clickForaCarrinho(event) {
+      if (event.target === event.currentTarget) this.carrinhoAtivo = false;
+    },
     fecharModal(event) {
       if (event.target === event.currentTarget) this.produto = false;
     },
     abrirModal(id) {
       this.fetchProduto(id);
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
     },
     adicionarItem() {
       this.produto.estoque--;
