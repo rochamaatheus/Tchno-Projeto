@@ -6,6 +6,7 @@ const vm = new Vue({
     carrinho: [],
     mensagemAlerta: 'Item Adicionado!',
     alertaAtivo: false,
+    carrinhoAtivo: false,
   },
   watch: {
     carrinho() {
@@ -44,6 +45,9 @@ const vm = new Vue({
       fetch(`./api/produtos/${id}/dados.json`)
         .then((r) => r.json())
         .then((json) => (this.produto = json));
+    },
+    clickForaCarrinho(event) {
+      if (event.target === event.currentTarget) this.carrinhoAtivo = false;
     },
     fecharModal(event) {
       if (event.target === event.currentTarget) this.produto = false;
