@@ -76,6 +76,33 @@
         </div>
       </section>
 
+      <section
+        class="carrinho_modal"
+        :class="{ativo: carrinhoAtivo}"
+        @click="clickForaCarrinho"
+      >
+        <div class="carrinho_container">
+          <button class="carrinho_fechar" @click="carrinhoAtivo = false;">
+            X
+          </button>
+          <h2 class="carrinho_titulo">Carrinho</h2>
+          <div v-if="carrinho.length > 0">
+            <ul class="carrinho_lista">
+              <li v-for="(item, index) in carrinho" class="carrinhho_item">
+                <p>{{item.nome}}</p>
+                <p class="carrinho_preco">{{item.preco | numeroPreco}}</p>
+                <button class="carrinho_remover" @click="removerItem(index)">
+                  X
+                </button>
+              </li>
+            </ul>
+            <p class="carrinho_total">{{carrinhoTotal | numeroPreco}}</p>
+            <button class="carrinho_finalizar">Finalizar Compra</button>
+          </div>
+          <p v-else>Nenhum item adicionado ao carrinho.</p>
+        </div>
+      </section>
+
       <div class="alerta" :class="{ativo: alertaAtivo}">
         <p class="alerta_mensagem">{{mensagemAlerta}}</p>
       </div>
