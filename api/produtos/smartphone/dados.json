@@ -2,19 +2,19 @@
   "id": "smartphone",
   "nome": "Smartphone",
   "preco": 1299,
-  "descricao": "Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se a necessidade de renovação processual causa impacto indireto na reavaliação do orçamento setorial.",
+  "descricao": "Este sofisticado smartphone redefine a experiência móvel, combinando estilo e funcionalidade em um único dispositivo. Sua tecnologia avançada oferece desempenho excepcional e recursos inovadores, elevando a forma como você se conecta com o mundo digital. Com um design elegante e ergonômico, este smartphone é a escolha perfeita para acompanhar seu estilo de vida dinâmico.",
   "estoque": 3,
   "img": "./api/produtos/smartphone/smartphone-foto.jpg",
   "reviews": [
     {
-      "nome": "Rogério",
+      "nome": "Maria",
       "estrelas": 5,
-      "descricao": "Gostei muito do produto, atendeu todas as minhas necessidades."
+      "descricao": "Estou impressionada com a qualidade deste smartphone. A câmera é incrível!"
     },
     {
-      "nome": "Nathália",
+      "nome": "Pedro",
       "estrelas": 4,
-      "descricao": "Gostei, mas o preço poderia ser melhor."
+      "descricao": "Ótimo desempenho, mas esperava um pouco mais da duração da bateria."
     }
   ]
 }
