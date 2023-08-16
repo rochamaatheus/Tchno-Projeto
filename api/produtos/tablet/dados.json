@@ -2,19 +2,24 @@
   "id": "tablet",
   "nome": "Tablet",
   "preco": 899,
-  "descricao": "Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se a necessidade de renovação processual causa impacto indireto na reavaliação do orçamento setorial.",
+  "descricao": "Este tablet de última geração oferece uma experiência tecnológica completa ao alcance de suas mãos. Com recursos avançados e uma interface intuitiva, você pode trabalhar, estudar e se entreter com facilidade. Sua tela de alta resolução proporciona imagens vívidas e nítidas, enquanto sua portabilidade permite que você leve seu mundo digital para onde quer que vá. Algumas avaliações sugerem que o preço poderia ser mais competitivo, mas a performance e a conveniência compensam.",
   "estoque": 2,
   "img": "./api/produtos/tablet/tablet-foto.jpg",
   "reviews": [
     {
-      "nome": "Rogério",
+      "nome": "Carolina",
       "estrelas": 5,
-      "descricao": "Gostei muito do produto, atendeu todas as minhas necessidades."
+      "descricao": "O tablet superou minhas expectativas. Perfeito para produtividade e entretenimento."
     },
     {
-      "nome": "Nathália",
+      "nome": "João",
+      "estrelas": 3,
+      "descricao": "Bom desempenho, mas achei o preço um pouco alto para um tablet."
+    },
+    {
+      "nome": "Mariana",
       "estrelas": 4,
-      "descricao": "Gostei, mas o preço poderia ser melhor."
+      "descricao": "Excelente qualidade de construção e tela, mas seria mais interessante com um preço mais acessível."
     }
   ]
 }

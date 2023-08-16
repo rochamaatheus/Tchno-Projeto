@@ -2,19 +2,24 @@
   "id": "smartwatch",
   "nome": "Smartwatch",
   "preco": 1199,
-  "descricao": "Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se a necessidade de renovação processual causa impacto indireto na reavaliação do orçamento setorial.",
+  "descricao": "Este smartwatch inovador combina estilo e funcionalidade para aprimorar sua experiência diária. Com recursos avançados de rastreamento de saúde e conectividade perfeita, ele se adapta ao seu estilo de vida ativo e moderno. Mantenha-se conectado e informado com elegância, mas esteja ciente de que algumas análises mencionaram preocupações sobre a durabilidade a longo prazo.",
   "estoque": 5,
   "img": "./api/produtos/smartwatch/smartwatch-foto.jpg",
   "reviews": [
     {
-      "nome": "Rogério",
+      "nome": "Eduarda",
       "estrelas": 5,
-      "descricao": "Gostei muito do produto, atendeu todas as minhas necessidades."
+      "descricao": "Ótimo smartwatch! As funções de saúde são realmente úteis."
     },
     {
-      "nome": "Nathália",
+      "nome": "Carlos",
+      "estrelas": 3,
+      "descricao": "Funcionalidades legais, mas é um pouco lento. Também tive problemas com a resistência à água."
+    },
+    {
+      "nome": "Laura",
       "estrelas": 4,
-      "descricao": "Gostei, mas o preço poderia ser melhor."
+      "descricao": "Estiloso e prático, mas tive dificuldades com a configuração inicial."
     }
   ]
 }

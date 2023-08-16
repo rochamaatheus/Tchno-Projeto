@@ -2,19 +2,19 @@
   "id": "speaker",
   "nome": "Speaker",
   "preco": 599,
-  "descricao": "Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se a necessidade de renovação processual causa impacto indireto na reavaliação do orçamento setorial.",
+  "descricao": "Eleve sua experiência auditiva com este speaker excepcional. Com som de alta qualidade e design elegante, este speaker é perfeito para animar suas festas, desfrutar de música em casa ou melhorar suas apresentações. Sinta cada batida e melodia com clareza e potência impressionantes. Tenha em mente que alguns usuários mencionaram que o preço é um pouco alto, mas a qualidade do som compensa.",
   "estoque": 3,
   "img": "./api/produtos/speaker/speaker-foto.jpg",
   "reviews": [
     {
-      "nome": "Rogério",
-      "estrelas": 5,
-      "descricao": "Gostei muito do produto, atendeu todas as minhas necessidades."
+      "nome": "Isabela",
+      "estrelas": 3,
+      "descricao": "Bom speaker, mas achei um pouco caro para o que oferece."
     },
     {
-      "nome": "Nathália",
+      "nome": "Lucas",
       "estrelas": 4,
-      "descricao": "Gostei, mas o preço poderia ser melhor."
+      "descricao": "Som poderoso e nítido, mas seria ótimo se fosse mais acessível."
     }
   ]
 }
