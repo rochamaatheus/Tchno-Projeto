@@ -25,7 +25,7 @@
       <section class="produtos">
         <div
           v-for="produto in produtos"
-          @click="fetchProduto(produto.id)"
+          @click="abrirModal(produto.id)"
           :key="produto.id"
           class="produto"
         >
